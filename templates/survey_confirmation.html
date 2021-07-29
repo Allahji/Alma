@@ -1,0 +1,41 @@
+<!DOCTYpE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Survey Confirmation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, sbrink-to-fit=no">
+</head>
+
+<body>
+    <div style="font-family: Arial, Helvetica, sans-serif; margin: 2.5%;">
+        <form method="post" action="/survey/results">
+            <p>For your <b>email</b>: Your respone was <input type="email" name="email" value="{{email}}"/></p>
+            <br>
+
+            <p>For <b>How often do you go grocery shoping?</b>: Your respone was <input type="text" name="a1" value="{{a1}}"/></p>
+            <br>
+
+            <p>For <b>When was the last time you went grocery shopping?</b>: Your respone was <input type="text" name="a2" value="{{a2}}"/></p>
+            <br>        
+        
+            <p>For <b>What would you change about your local grocery shopping experience?</b>: Your respone was <input type="text" name="a3" value="{{a3}}"/></p>
+            <br>        
+        
+            <p>For <b>What frustrates you about grocery prices?</b>: Your respone was <input type="text" name="a4" value="{{a4}}"/></p>
+            <br>        
+        
+            <p>For <b>Would you say you have easy access to healthy food options?"</b>: Your respone was <input type="text" name="a5" value="{{a5}}"/></p>
+            <br>        
+        
+            <p>For <b>Do you wish there was a delivery option for your groceries?"</b>: Your respone was <input type="text" name="a6" value="{{a6}}"/></p>
+            <br>
+            <div style = "text-align: center;">
+                <h4>If your responses are correct, click "Proceed"</h4>
+                <input type="submit" value="Proceed"/>
+            </div>
+        </form>>
+    </div>
+</body>
+
+</html>

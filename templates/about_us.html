@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+
+<head>
+    <title>About Us | Alma Food Market</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <style>
+        input[name="message"]::placeholder {
+            position: relative;
+            top: -38%;
+        }
+        input[name="inquiry"]{
+            padding-bottom: 8% !important;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="nav nav-pills nav justify-content-center">
+        <li class="nav-item">
+            <a class="nav-link" href="home">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="about_us">About Us</a>
+        </li>
+    </ul>
+    <img style="display: block; margin-left: auto; margin-right: auto; max-width: 100%;" src="https://lh3.googleusercontent.com/Xjh9nksNn1I0etdZYoNSU6ZFnumU9-SKrDOSxYE96T5rwSZHaF16mf8MfXFpBruv37h-dLuPuiYiMJeW3O-YlzDvPUNidFvEu51ScagYNGU9X3MR_fEGXPc1-8fGLH-NSTBGhr0-pw=w265-h297-p-k" /></a>
+    <div style = "font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+    <div class="card text-center">
+        <div class="card" style="width: 100%;">
+            <div class="card-body">
+                <br><br>
+                <h2 class="card-title">Grocery Shopping Experience Survey</h2><br>
+                <p class="card-text">To help identify the issues of grocery shopping, we ask that you fill out the survey below.</p><br>
+                <a href="survey" target="_blank"><button style="border: none; width: 7%; background-color: salmon; color: white;">Survey</button></a>
+                <br><br>
+            </div>
+        </div>
+    </div>
+
+    <form method="post" action="/sign_up/confirmation" target="_blank">
+        <div style="width: 100%; margin: auto; text-align: center; background-color: rgb(36,107,84); color: white;">
+         <br><br>
+            <h2 style="font-size: xx-large;">SIGN UP</h2>
+            <label style="margin: 1%; font-size: larger;" for="email">Sign up to make sure you are among the first <br> to be notified when we finally launch. We'll get in touch with you soon.</label><br>
+            <input style="margin: 1%;" type="text" name="name" placeholder="Name" required />
+            <input style="margin: -0.5%;" type="email" name="email" placeholder="Email" required />
+            <input style="margin: 1%; width: 7%; background-color: salmon; color: white; border: none;" type="submit" value="Submit" />
+            <br><br><hr>
+        </div>
+    </form>
+
+    <div style = "width: 50%; margin: auto; text-align: center;">
+        <br><h1 style="font-size: xx-large;">For inquiries:</h1><br>
+        <p >Reach out! We are looking for possible vendors, so let us know if you would like to pitch in. <br> We would love to hear from future customers as well.<br><br>
+    </div>
+
+    <form method="post" action="/inquiry/confirmation" target="_blank">
+        <input style="margin-left: 35%;" type="text" name="name" placeholder="Name" required/><br>
+        <input style="margin-left: 35%;"  type="email" name="email" placeholder="Email" required/><br>
+        <input style="margin-left: 35%;" type="text" name="inquiry" placeholder="Message" required/><br><br>
+        <input style="border: none; margin-left: 35%; width: 7%; background-color: salmon; color: white;" type="submit">
+    </form>
+    <br><br><br>
+    
+    <div style="background-color: rgb(36,107,84); color: white">
+    <br><br>
+    <button style="width: 10%; margin-left: 45%; background-color: salmon; border: none;" class="btn btn-primary" type="button" data-bs-toggle="collapse"
+        data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+        Meet The Team!
+    </button>
+    <div class="collapse" id="collapseExample">
+        <div style = "border: none; background-color: rgb(36,107,84);" class="card card-body">
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button style = "background-color: rgb(36,107,84); color: white;" class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Buisness and Outreach Management Team
+                        </button>
+                    </h2>
+                    <div style = "background-color: rgb(36,107,84);" id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                        <div style="display: flex; justify-content: space-between;">
+                                <div class="card text-center" style="width: 50%;background-color: rgb(36,107,84);">
+                                <div class="card-body">
+                                    <h5 class="card-title">Alexa Anderson</h5>
+                                    <p class="card-text"> desc </p>
+                                </div>
+                            </div>
+                                <div class="card text-center" style="width: 50%;background-color: rgb(36,107,84);">
+                                <div class="card-body">
+                                    <h5 class="card-title">Amaraya Hernandez</h5>
+                                    <p class="card-text"> desc </p>
+                                </div>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button style = "background-color: rgb(36,107,84); color: white;" class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Website and Data Management Team
+                        </button>
+                    </h2>
+                    <div style = "background-color: rgb(36,107,84);" id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div style="display: flex; justify-content: space-between;">
+                                <div class="card text-center" style="width: 50%;background-color: rgb(36,107,84);">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Allahji Barry</h5>
+                                        <p class="card-text"> desc </p>
+                                    </div>
+                                </div>
+                                <div class="card text-center" style="width: 50%;background-color: rgb(36,107,84);">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Ryaan Sharif</h5>
+                                        <p class="card-text"> desc </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

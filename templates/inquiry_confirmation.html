@@ -1,0 +1,31 @@
+<!DOCTYpE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Inquiry Confirmation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, sbrink-to-fit=no">
+</head>
+
+<body>
+    <div style="font-family: Arial, Helvetica, sans-serif; margin: 2.5%;">
+        <form method="post" action="/inquiry/results">
+            <p>For your <b>name</b>: Your respone was <input type="text" name="name" value="{{name}}"/></p>
+            <br><br>
+            
+            <p>For your <b>email</b>: Your respone was <input type="email" name="email" value="{{email}}"/></p>
+            <br><br>
+
+            <p>For your <b>message</b>: Your respone was <input type="text" name="inquiry" value="{{inquiry}}"/></p>
+            <br><br>
+            <br><br><br><br><br><br><br><br><br><br><br><br>
+            
+            <div style = "text-align: center;">
+                <h4>If your responses are correct, click "Proceed"</h4>
+                <input type="submit" value="Proceed"/>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
