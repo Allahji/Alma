@@ -22,14 +22,14 @@
     <img style="display: block; margin-left: auto; margin-right: auto; max-width: 100%;" src="https://lh3.googleusercontent.com/Xjh9nksNn1I0etdZYoNSU6ZFnumU9-SKrDOSxYE96T5rwSZHaF16mf8MfXFpBruv37h-dLuPuiYiMJeW3O-YlzDvPUNidFvEu51ScagYNGU9X3MR_fEGXPc1-8fGLH-NSTBGhr0-pw=w265-h297-p-k" /></a><br><br>
     <div style="margin-left: 15%; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
             <h1 style="margin-left: 3%;">Ingredients</h1>
-            <form method="post" action="order/results">
+            <form method="post" action="order/results" target="_blank">
                 {% for ingredient in inventory %}
                     <input style = "margin-left: 4.5%;" type="checkbox" id="{{ingredient}}" name="{{ingredient}}" value="{{ingredient}}">
                     <label for="{{ingredient}}">{{ingredient}}</label><br>
                 {% endfor %}<br>
                 <div style="display: flex; justify-content: space-between;">
                     <input style = "margin-left: 2.5%;" type="number" id="donation" name="donation" min="0" placeholder="Leave a donation here!">
-                    <br><input style="margin-right: 87.5%;" type="submit" value="Submit"/>
+                    <br><input style="margin-right: 87.5%;" type="submit" value="Submit"/><br>
                 </div>
             </form>
     </div>
