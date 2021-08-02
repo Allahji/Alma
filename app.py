@@ -30,6 +30,17 @@ def home():
 def about_us():
     return render_template('about_us.html')
 
+@app.route('/order')
+def order():
+    inventory = ["Apples", "Oranges", "Grapes", "Chicken", "Beef", "Spinach"]
+    return render_template('order.html', inventory = inventory)
+
+@app.route('/order/results', methods=["GET", "POST"])
+def order_results():
+    if request.method == "POST":        
+        return render_template("order_results.html")
+    else:
+        return error_404
 
 @app.route('/survey')
 def survey():
